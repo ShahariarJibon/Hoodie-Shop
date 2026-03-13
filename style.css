@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E8E2DB;
+}
+
+:root{
+    --main-color:rgb(0, 104, 174);
+    --main-font: "Playfair", serif;
+    --primary-font:'Roboto',sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logg{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5rem;
+}
+
+.burger span{
+    border: 2px solid var(--main-color);
+    width: 40px;
+    height: 1px;
+    margin: 2px;
+}
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    margin-top:2rem ;
+}
+
+.main-heading{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    transform: translateY(-90px);
+    color: rgb(88, 88, 88);
+    line-height: 3rem;
+}
+
+.main-heading span{
+    color: rgb(211, 106, 106);
+}
+
+.primary-heading{
+    max-width: 500px;
+    font-family: var(--primary-font);
+    line-height: 25px;
+    margin-bottom: 2rem;
+    color: rgb(141, 141, 141);
+    font-weight: bold;
+}
+
+.btn-fill{
+    background: rgb(255, 183, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition:  all 0.5s ease-out;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.btn-fill:hover{
+    background: white;
+    color: gray;
+    border: 2px solid gray;
+    font-size: 1.4rem;
+}
+
+.btn-outline.active{
+    border: 2px solid orangered;
+    color: chocolate;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    font-weight: 600;
+}
+
+.btn-outline.active:hover{
+    background: rgb(255, 183, 0);
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+}
+
+.img-container{
+    border-radius: 50%;
+    box-shadow: 4px 7px 5px 2px #bcbaba;
+}
+
+.header-img{
+    border-radius: 100%;
+    background: url("the-ian-ZCoqcrWp9GY-unsplash.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+}
+
+.section-one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.img-container{
+    width: 400;
+}
+
+.section-content{
+    max-width: 500px;
+}
+
+.section-one-img{
+    background: url("khalid-boutchich-AGwMgxZs1L0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+
+.item-layer img{
+    height: 350px;
+    border-radius: 20px;
+    margin: 30px;
+    box-shadow: 4px 2px 10px rgb(93, 25, 1);
+}
+
+.products{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.products .products-heading{
+font-family: var(--primary-font);
+font-size: 4rem;
+margin-bottom: 3rem;
+color: darkcyan;
+}
+
+.products .product-categories button{
+    margin: 2rem;
+    padding: 12px 20px;
+    background: rgb(255, 183, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.products .product-categories button:hover{
+    background: white;
+    color: rgb(255, 183, 0);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(255, 183, 0) ;
+    font-size: 1.5rem;
+}
+
+.products .product-items-container{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+}
+
+.products .product-items-container .item-layer{
+    background: #ffae00;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+
+.products .product-items-container .item{
+    text-align: center;
+}
+
+
+.products .product-items-container .item .item-name{
+    font-family: var(--primary-font);
+    margin-bottom: 15px;
+}
+
+.products .product-items-container .item .item-price{
+    font-family: var(--primary-font);
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.products .product-items-container .item .view-product{
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffae00;
+}
+
+
+.customer-reviews{
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customer-heading{
+    font-family: var(--main-font);
+    text-align: center;
+    margin-top: 4rem;
+    color: brown;
+    font-size: 2rem;
+}
+
+.customer{
+    text-align: center;
+}
+
+.customer-reviews .customer-discription{
+    font-size: 14px;
+    margin-top: 20px;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+.customer .customer-img .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+
+}
+
+.customer .img-one{
+    background: url("charlie-green-3JmfENcL24M-unsplash.jpg");
+
+}
+.customer .img-two{
+    background: url("charlie-green-3JmfENcL24M-unsplash.jpg");
+
+}
+.customer .img-three{
+    background: url("charlie-green-3JmfENcL24M-unsplash.jpg");
+
+}
+
+footer{
+    background: #BCD9A2;
+    margin-top: 10rem;
+    color:rgb(0, 99, 51);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50vh;
+    font-family: var(--primary-font);
+
+}
+
+footer .container .footer-heading{
+    margin-bottom: 3rem;
+}
+
+footer .container .footer-primary-heading{
+    margin-bottom: 3rem;
+    font-weight: normal;
+}
+
+@media only screen and(max-width:900px){
+    header{
+        height: 120vh;
+        text-align: center;
+    }
+    .section-one{
+        height: 120vh;
+        text-align: center;
+    }
+    
+    .header-img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-heading{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .primary-heading{
+        width: 400px;
+    }
+
+    .customer .customer-img .img{
+        width: 150px;
+        height: 150px;
+    }
+
+
+}
